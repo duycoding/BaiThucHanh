@@ -1,0 +1,140 @@
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+    font: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    padding: 1px;
+    grid-template-areas: 
+    "header-cell"
+    "nav-cell"
+    "footer-cell";
+}
+
+header {
+    grid-area: header-cell;
+    margin-bottom: 2px;
+    height: 100px;
+    padding: 0 5px;
+    border-radius: 5px;
+    background-image: url(images-lab2/header.png);
+}
+
+nav {
+    grid-area: nav-cell;
+    /* height: 60px; */
+    margin-top: 20px;
+}
+
+/* select chon tat ca the con <a> cua the <nav> */
+nav a {
+    float: left;
+    padding: 2px;
+    margin: 2px;
+    color: #ed4190;
+    text-decoration: none;
+}
+
+.search-container {
+    float: right;
+    margin-right: 5px;
+}
+
+a:hover {
+    background-color: #ed4190;
+    color: white;
+}
+
+header, nav a {
+    border: 2px solid #ccc7c8;
+    border-radius: 5px;
+}
+
+#header-img1 {
+    position: absolute;
+    height: 100px;
+    top: -30px;
+    animation: img1 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes img1 {
+    from {left: 80%}
+    to {left: 30%}
+}
+
+#header-img2 {
+    position: absolute;
+    height: 70px;
+    top: -5px;
+    animation: img2 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes img2 {
+    from {left: 80%}
+    to {left: 45%}
+}
+
+#header-img3 {
+    position: absolute;
+    height: 80px;
+    top: 0px;
+    animation: img3 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes img3 {
+    from {left: 80%}
+    to {left: 60%}
+}
+
+h2, h3 {
+    text-align: center;
+    color: #ed4190;
+}
+
+h2 {
+    text-decoration: underline greenyellow;
+}
+
+footer {
+    grid-area: footer-cell;
+    text-align: center;
+}
+
+.lienhe {
+    margin-top: 20px;
+    border: 1px solid #ccc7c8; 
+    padding: 5px;
+}
+
+tr {
+    border: 1px solid red;  
+}
+
+td {
+    margin-left: 20px;
+}
+
+footer {
+    border: 1px solid #ccc7c8;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+i {
+    background-color: greenyellow;
+    color: white;
+}
+
+div.container-form {
+    padding-left: 300px;
+}
+
+#ve-dau-trang i {
+    background-color: #ed4190;
+    float: right;
+    height: 50px;
+    width: 50px;
+}

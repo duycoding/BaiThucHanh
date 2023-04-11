@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Đăng Ký Thành Viên</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="images\logo.png">
+            <nav>
+                <a href="trangchu.html">Trang Chủ</a>
+                <a href="gioithieu.html">Giới Thiệu</a>
+                <a href="sanpham.html">Sản Phẩm</a>
+                <a href="tintuc.html">Tin Tức</a>
+                <a href="dangnhap.html">Đăng Nhập</a>
+                <a href="dangky.html">Đăng Ký</a>
+                <a href="lienhe.html">Liên Hệ</a>
+            </nav>          
+        </header>
+
+        <fieldset>
+            <legend>Đăng ký</legend>
+            <form method="POST" enctype="multipart/form-data" onsubmit="return validateForm(this);">
+                <table >
+                    <tr>
+                        <td><b>Email</b></td>
+                        <td><input type="text" name="email" placeholder="Vui lòng nhập email"></td>                 
+                    </tr>
+                    
+                   <tr>
+                       <td><b>Mật Khẩu</b></td>
+                       <td><input type="password" name="psw" placeholder="Vui lòng nhập mật khẩu"></td>
+                   </tr>
+     
+                   <tr>
+                       <td><b>Nhập lại mật khẩu</b></td>
+                       <td><input type="password" name="psw2" placeholder="Vui lòng nhập lại mật khẩu"></td>
+                   </tr>
+     
+                   <tr>
+                       <td><b>Cấp độ thành viên</b></td>
+                       <td>
+                         <input type="radio" id="html" name="memberType" value="HTML">
+                         <label for="html">Bạc</label>
+                         <input type="radio" id="css" name="memberType" value="CSS">
+                         <label for="css">Vàng</label>
+                         <input type="radio" id="javascript" name="memberType" value="JavaScript">
+                         <label for="javascript">Bạch Kim</label>
+                       </td>
+                   </tr>
+                   
+                   <tr>
+                       <td><b>Ảnh đại diện</b></td>
+                       <td><input type="file"></td>
+                   </tr>
+     
+                   <tr>
+                       <td colspan="2"><b>
+                           Thông qua việc cấp tài khoản, bạn đồng ý với
+                           <a href="">Điều khoản & Quyền riêng tư của chúng tôi.</a></b>
+                       </td>
+                   </tr>
+     
+                   <tr>
+                       <td colspan="2">
+                         <input type="reset" value="Hủy">
+                         <input type="submit" value="Đăng ký">
+                       </td>
+                   </tr>
+                 </table>
+            </form> 
+        </fieldset>
+
+        <footer>
+            <p><span>&copy;</span> 2021 Bản quyền thuộc về FreezeVN,</p><a href="">facebook</a>
+            <a href="">twitter</a> <a href="">pinterest</a> <a href="trangchu.html">Về đầu trang</a>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>

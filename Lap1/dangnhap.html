@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Đăng Ký Thành Viên</title>
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="images\logo.png">
+            <nav>
+                <a href="trangchu.html">Trang Chủ</a>
+                <a href="gioithieu.html">Giới Thiệu</a>
+                <a href="sanpham.html">Sản Phẩm</a>
+                <a href="tintuc.html">Tin Tức</a>
+                <a href="dangnhap.html">Đăng Nhập</a>
+                <a href="dangky.html">Đăng Ký</a>
+                <a href="lienhe.html">Liên Hệ</a>
+
+                <div class="search-container">
+                    <form method="get" action="timkiem.html">
+                    <div class="input-container">					
+                        <input id="searchInput" class="search-input" type="text" placeholder="Nhập nội dung cần tìm..." name="q">
+                        <button id="searchBtn" type="submit"><i class="fa fa-search icon-white"></i></button>
+                        <i class="fa fa-shopping-cart icon-pink"></i>
+                    </div>
+                    </form>		
+                </div>
+            </nav>          
+        </header>
+
+        <fieldset>
+            <legend>Đăng Nhập</legend>
+            <form method="POST" enctype="multipart/form-data" onsubmit="return validateForm(this);">
+                <img class="image-bottom" src="images\dangnhap\userlogin.png"> 
+                <table >
+                    <tr>
+                        <td><b>Email</b></td>
+                        <td><input type="text" name="email" placeholder="Vui lòng nhập email"></td>                 
+                    </tr>
+                    
+                   <tr>
+                       <td><b>Mật Khẩu</b></td>
+                       <td><input type="password" name="psw" placeholder="Vui lòng nhập mật khẩu"></td>
+                   </tr>
+     
+                   <tr>
+                       <td colspan="2"><b>Bạn quên <a href="">Mật Khẩu</a> Ghi nhớ cho lần đăng nhập sau</b>
+                       </td>
+                   </tr>
+     
+                   <tr>
+                       <td colspan="2">
+                         <input type="reset" value="Hủy">
+                         <input type="submit" value="Đăng ký">
+                       </td>
+                   </tr>
+                 </table>
+            </form> 
+        </fieldset>
+
+        <footer>
+            <p><span>&copy;</span> 2021 Bản quyền thuộc về FreezeVN,</p><a href="">facebook</a>
+            <a href="">twitter</a> <a href="">pinterest</a> <a href="trangchu.html">Về đầu trang</a>
+        </footer>
+    </body>
+</html>
