@@ -255,3 +255,25 @@ div.thanh-toan {
 form img {
 	margin-left: 220px;
 }
+
+.h2-title {
+	text-align: center;
+	text-decoration: underline;
+	text-decoration-color: greenyellow;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #dddddd;
+  }
